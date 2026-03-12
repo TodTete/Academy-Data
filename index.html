@@ -1,53 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Portafolio | Ricardo Vallejo</title>
 
 <link rel="stylesheet" href="style.css">
 
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<!-- AOS Animations -->
-<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<div id="particles-js"></div>
+<canvas id="space"></canvas>
 
 <header>
 
 <nav>
-<h1 class="logo">Ricardo Vallejo</h1>
+
+<h1 class="logo">
+<i class="fa-solid fa-code"></i> Ricardo Vallejo
+</h1>
 
 <ul>
-<li><a href="#bio">Bio</a></li>
-<li><a href="#tareas">Tareas</a></li>
-<li><a href="#ejercicios">Ejercicios</a></li>
-<li><a href="#proyecto">Proyecto Final</a></li>
-<li><a href="#redes">Redes</a></li>
+<li><a href="#bio"><i class="fa-solid fa-user"></i> Bio</a></li>
+<li><a href="#tareas"><i class="fa-solid fa-book"></i> Tareas</a></li>
+<li><a href="#ejercicios"><i class="fa-solid fa-laptop-code"></i> Ejercicios</a></li>
+<li><a href="#proyecto"><i class="fa-solid fa-rocket"></i> Proyecto</a></li>
+<li><a href="#redes"><i class="fa-solid fa-share-nodes"></i> Redes</a></li>
 </ul>
+
 </nav>
 
 <section class="hero">
+
 <h2>Portafolio Académico</h2>
-<p>Desarrollo • Tecnología • Aprendizaje Continuo</p>
+<p>Desarrollo • Cloud • Tecnología</p>
+
 </section>
 
 </header>
 
+<section id="bio">
 
-<section id="bio" data-aos="fade-up">
-<h2>Sobre mí</h2>
+<h2><i class="fa-solid fa-user-astronaut"></i> Sobre mí</h2>
 
 <p>
-Soy Ricardo Vallejo, entusiasta de la tecnología y el desarrollo de software.
-Este portafolio presenta proyectos académicos, ejercicios de programación y
-actividades realizadas durante mi formación.
+Soy Ricardo Vallejo, apasionado por el desarrollo de software,
+cloud computing y aprendizaje continuo en tecnología.
 </p>
 
 </section>
@@ -55,24 +60,24 @@ actividades realizadas durante mi formación.
 
 <section id="tareas" class="cards">
 
-<h2 data-aos="fade-right">Tareas</h2>
+<h2><i class="fa-solid fa-book-open"></i> Tareas</h2>
 
-<div class="card" data-aos="zoom-in">
+<div class="card">
+<i class="fa-solid fa-file-code icon"></i>
 <h3>Tarea 1</h3>
-<p>Descripción breve de la tarea realizada.</p>
-<a href="#">Ver más</a>
+<p>Descripción de la tarea.</p>
 </div>
 
-<div class="card" data-aos="zoom-in">
+<div class="card">
+<i class="fa-solid fa-file-code icon"></i>
 <h3>Tarea 2</h3>
-<p>Descripción breve de la tarea realizada.</p>
-<a href="#">Ver más</a>
+<p>Descripción de la tarea.</p>
 </div>
 
-<div class="card" data-aos="zoom-in">
+<div class="card">
+<i class="fa-solid fa-file-code icon"></i>
 <h3>Tarea 3</h3>
-<p>Descripción breve de la tarea realizada.</p>
-<a href="#">Ver más</a>
+<p>Descripción de la tarea.</p>
 </div>
 
 </section>
@@ -80,19 +85,22 @@ actividades realizadas durante mi formación.
 
 <section id="ejercicios" class="cards">
 
-<h2 data-aos="fade-right">Ejercicios de Clase</h2>
+<h2><i class="fa-solid fa-terminal"></i> Ejercicios de Clase</h2>
 
-<div class="card" data-aos="zoom-in">
+<div class="card">
+<i class="fa-solid fa-laptop-code icon"></i>
 <h3>Ejercicio 1</h3>
+<p>Ejercicio práctico.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-laptop-code icon"></i>
+<h3>Ejercicio 2</h3>
 <p>Práctica de programación.</p>
 </div>
 
-<div class="card" data-aos="zoom-in">
-<h3>Ejercicio 2</h3>
-<p>Ejercicio de lógica.</p>
-</div>
-
-<div class="card" data-aos="zoom-in">
+<div class="card">
+<i class="fa-solid fa-laptop-code icon"></i>
 <h3>Ejercicio 3</h3>
 <p>Actividad realizada en clase.</p>
 </div>
@@ -100,20 +108,21 @@ actividades realizadas durante mi formación.
 </section>
 
 
-<section id="proyecto" data-aos="fade-up">
+<section id="proyecto">
 
-<h2>Proyecto Final</h2>
+<h2><i class="fa-solid fa-rocket"></i> Proyecto Final</h2>
 
 <div class="project">
 
-<h3>Sistema / Aplicación</h3>
+<h3>Sistema desarrollado</h3>
 
 <p>
-Descripción del proyecto final, tecnologías utilizadas
-y objetivo del sistema desarrollado.
+Descripción del sistema final desarrollado durante el curso.
 </p>
 
-<a class="btn" href="#">Repositorio</a>
+<a class="btn">
+<i class="fa-brands fa-github"></i> Repositorio
+</a>
 
 </div>
 
@@ -122,26 +131,25 @@ y objetivo del sistema desarrollado.
 
 <section id="redes">
 
-<h2 data-aos="fade-up">Redes</h2>
+<h2><i class="fa-solid fa-share-nodes"></i> Redes</h2>
 
 <div class="social">
 
-<a href="#">GitHub</a>
-<a href="#">LinkedIn</a>
-<a href="#">Twitter</a>
+<a href="#"><i class="fa-brands fa-github"></i></a>
+<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+<a href="#"><i class="fa-brands fa-twitter"></i></a>
 
 </div>
 
 </section>
 
-
 <footer>
+
 <p>© 2026 Ricardo Vallejo</p>
+
 </footer>
 
-
-<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
 <script src="script.js"></script>
 
 </body>
