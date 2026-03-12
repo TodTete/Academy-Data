@@ -1,127 +1,46 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
+const scene = new THREE.Scene();
+
+const camera = new THREE.PerspectiveCamera(
+75,
+window.innerWidth/window.innerHeight,
+0.1,
+1000
+);
+
+const renderer = new THREE.WebGLRenderer({
+canvas:document.getElementById("space")
+});
+
+renderer.setSize(window.innerWidth,window.innerHeight);
+
+const starsGeometry = new THREE.BufferGeometry();
+const starsCount = 6000;
+
+const posArray = new Float32Array(starsCount * 3);
+
+for(let i=0;i<starsCount*3;i++){
+posArray[i]=(Math.random()-0.5)*2000;
 }
 
-body{
-background:black;
-color:white;
-overflow-x:hidden;
+starsGeometry.setAttribute(
+'position',
+new THREE.BufferAttribute(posArray,3)
+);
+
+const starsMaterial = new THREE.PointsMaterial({
+size:1,
+color:0xffffff
+});
+
+const starsMesh = new THREE.Points(starsGeometry,starsMaterial);
+scene.add(starsMesh);
+
+camera.position.z = 5;
+
+function animate(){
+requestAnimationFrame(animate);
+starsMesh.rotation.y += 0.0005;
+renderer.render(scene,camera);
 }
 
-#space{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-z-index:-1;
-}
-
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 50px;
-background:rgba(0,0,0,0.4);
-backdrop-filter:blur(10px);
-}
-
-.logo{
-font-size:22px;
-}
-
-nav ul{
-display:flex;
-gap:25px;
-list-style:none;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-font-size:15px;
-transition:0.3s;
-}
-
-nav a:hover{
-color:#00d9ff;
-}
-
-.hero{
-text-align:center;
-padding:120px 20px;
-}
-
-.hero h2{
-font-size:50px;
-}
-
-section{
-padding:80px 10%;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.card{
-background:rgba(255,255,255,0.05);
-border-radius:15px;
-padding:30px;
-text-align:center;
-transition:0.4s;
-backdrop-filter:blur(10px);
-}
-
-.card:hover{
-transform:translateY(-10px) scale(1.05);
-}
-
-.icon{
-font-size:30px;
-margin-bottom:10px;
-color:#00d9ff;
-}
-
-.project{
-text-align:center;
-max-width:600px;
-margin:auto;
-}
-
-.btn{
-display:inline-block;
-padding:12px 25px;
-margin-top:15px;
-background:#00d9ff;
-color:black;
-border-radius:8px;
-text-decoration:none;
-}
-
-.social{
-display:flex;
-justify-content:center;
-gap:30px;
-font-size:28px;
-}
-
-.social a{
-color:white;
-transition:0.3s;
-}
-
-.social a:hover{
-color:#00d9ff;
-}
-
-footer{
-text-align:center;
-padding:30px;
-margin-top:40px;
-}
+animate();
