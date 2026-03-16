@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Ejercicio_Titanic</title><script src="file:///usr/share/javascript/requirejs/require.min.js"></script>
+<title>Ejercicio_2.1</title><script src="file:///usr/share/javascript/requirejs/require.min.js"></script>
 
 
 
@@ -14024,37 +14024,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
     </script>
     <!-- End of mathjax configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
-
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1>Ejercicio Titatic</h1>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 1. Cargar el CSV</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"titanic.csv"</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -14062,420 +14032,8 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 2. Ver los primeros registros (head)</span>
-<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Passengerid</th>
-      <th>Age</th>
-      <th>Fare</th>
-      <th>Sex</th>
-      <th>sibsp</th>
-      <th>zero</th>
-      <th>zero.1</th>
-      <th>zero.2</th>
-      <th>zero.3</th>
-      <th>zero.4</th>
-      <th>...</th>
-      <th>zero.12</th>
-      <th>zero.13</th>
-      <th>zero.14</th>
-      <th>Pclass</th>
-      <th>zero.15</th>
-      <th>zero.16</th>
-      <th>Embarked</th>
-      <th>zero.17</th>
-      <th>zero.18</th>
-      <th>2urvived</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>1</td>
-      <td>22.0</td>
-      <td>7.2500</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>3</td>
-      <td>0</td>
-      <td>0</td>
-      <td>2.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>2</td>
-      <td>38.0</td>
-      <td>71.2833</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>3</td>
-      <td>26.0</td>
-      <td>7.9250</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>3</td>
-      <td>0</td>
-      <td>0</td>
-      <td>2.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>4</td>
-      <td>35.0</td>
-      <td>53.1000</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>2.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>5</td>
-      <td>35.0</td>
-      <td>8.0500</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>3</td>
-      <td>0</td>
-      <td>0</td>
-      <td>2.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-  </tbody>
-</table>
-<p>5 rows × 28 columns</p>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 3. Ver los últimos registros (tail)</span>
-<span class="n">df</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Passengerid</th>
-      <th>Age</th>
-      <th>Fare</th>
-      <th>Sex</th>
-      <th>sibsp</th>
-      <th>zero</th>
-      <th>zero.1</th>
-      <th>zero.2</th>
-      <th>zero.3</th>
-      <th>zero.4</th>
-      <th>...</th>
-      <th>zero.12</th>
-      <th>zero.13</th>
-      <th>zero.14</th>
-      <th>Pclass</th>
-      <th>zero.15</th>
-      <th>zero.16</th>
-      <th>Embarked</th>
-      <th>zero.17</th>
-      <th>zero.18</th>
-      <th>2urvived</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>1304</th>
-      <td>1305</td>
-      <td>28.0</td>
-      <td>8.0500</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>3</td>
-      <td>0</td>
-      <td>0</td>
-      <td>2.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>1305</th>
-      <td>1306</td>
-      <td>39.0</td>
-      <td>108.9000</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>1306</th>
-      <td>1307</td>
-      <td>38.5</td>
-      <td>7.2500</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>3</td>
-      <td>0</td>
-      <td>0</td>
-      <td>2.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>1307</th>
-      <td>1308</td>
-      <td>28.0</td>
-      <td>8.0500</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>3</td>
-      <td>0</td>
-      <td>0</td>
-      <td>2.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>1308</th>
-      <td>1309</td>
-      <td>28.0</td>
-      <td>22.3583</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>3</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-  </tbody>
-</table>
-<p>5 rows × 28 columns</p>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 4. Información del dataset</span>
-<span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
+<span class="o">!{</span>sys.executable<span class="o">}</span><span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>numpy
 </pre></div>
 
      </div>
@@ -14497,47 +14055,47 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>&lt;class &#39;pandas.DataFrame&#39;&gt;
-RangeIndex: 1309 entries, 0 to 1308
-Data columns (total 28 columns):
- #   Column       Non-Null Count  Dtype  
----  ------       --------------  -----  
- 0   Passengerid  1309 non-null   int64  
- 1   Age          1309 non-null   float64
- 2   Fare         1309 non-null   float64
- 3   Sex          1309 non-null   int64  
- 4   sibsp        1309 non-null   int64  
- 5   zero         1309 non-null   int64  
- 6   zero.1       1309 non-null   int64  
- 7   zero.2       1309 non-null   int64  
- 8   zero.3       1309 non-null   int64  
- 9   zero.4       1309 non-null   int64  
- 10  zero.5       1309 non-null   int64  
- 11  zero.6       1309 non-null   int64  
- 12  Parch        1309 non-null   int64  
- 13  zero.7       1309 non-null   int64  
- 14  zero.8       1309 non-null   int64  
- 15  zero.9       1309 non-null   int64  
- 16  zero.10      1309 non-null   int64  
- 17  zero.11      1309 non-null   int64  
- 18  zero.12      1309 non-null   int64  
- 19  zero.13      1309 non-null   int64  
- 20  zero.14      1309 non-null   int64  
- 21  Pclass       1309 non-null   int64  
- 22  zero.15      1309 non-null   int64  
- 23  zero.16      1309 non-null   int64  
- 24  Embarked     1307 non-null   float64
- 25  zero.17      1309 non-null   int64  
- 26  zero.18      1309 non-null   int64  
- 27  2urvived     1309 non-null   int64  
-dtypes: float64(3), int64(25)
-memory usage: 286.5 KB
+<pre>Requirement already satisfied: numpy in ./venv/lib/python3.12/site-packages (2.4.3)
 </pre>
 </div>
 </div>
 
 </div>
 
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">raw_data</span> <span class="o">=</span> <span class="s2">"dataset.csv"</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">raw_data</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
 </div>
 
 </div>
@@ -14547,13 +14105,13 @@ memory usage: 286.5 KB
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Esto muestra:</p>
-<ul>
-<li>número de filas</li>
-<li>número de columnas</li>
-<li>tipo de datos</li>
-<li>valores nulos</li>
+<h2 id="Ejercicio-1:-filtro-+-ordenamiento-(basico)">Ejercicio 1: filtro + ordenamiento (basico)<a class="anchor-link" href="#Ejercicio-1:-filtro-+-ordenamiento-(basico)">&#182;</a></h2><h3 id="IDEA">IDEA<a class="anchor-link" href="#IDEA">&#182;</a></h3><ul>
+<li><em>I</em>: listar canciones populares no explicitas para playlist familiar.</li>
+<li><em>D</em>: track_name, artists, popularity, explicit, track_genre.</li>
+<li><em>E</em>: filtrar explicit == False, seleccionar columnas, ordenar por popularity desc.</li>
+<li><em>A</em>: construir dataframe final con top 25.</li>
 </ul>
+<p><em>Criterio de exito</em>: 25 filas, sin explicitas, ordenadas por popularidad desc.</p>
 
 </div>
 </div>
@@ -14563,11 +14121,16 @@ memory usage: 286.5 KB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 5. Estadísticas descriptivas</span>
-<span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">datos</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s2">"explicit"</span><span class="p">]</span> <span class="o">==</span> <span class="kc">False</span><span class="p">]</span>   
+    <span class="p">[[</span><span class="s2">"track_name"</span><span class="p">,</span> <span class="s2">"artists"</span><span class="p">,</span> <span class="s2">"popularity"</span><span class="p">,</span> <span class="s2">"explicit"</span><span class="p">,</span> <span class="s2">"track_genre"</span><span class="p">]]</span> 
+    <span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s2">"popularity"</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>  
+    <span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span> 
+<span class="p">)</span>
+<span class="n">datos</span>
 </pre></div>
 
      </div>
@@ -14585,7 +14148,7 @@ memory usage: 286.5 KB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
 
 
 
@@ -14608,225 +14171,216 @@ memory usage: 286.5 KB
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>Passengerid</th>
-      <th>Age</th>
-      <th>Fare</th>
-      <th>Sex</th>
-      <th>sibsp</th>
-      <th>zero</th>
-      <th>zero.1</th>
-      <th>zero.2</th>
-      <th>zero.3</th>
-      <th>zero.4</th>
-      <th>...</th>
-      <th>zero.12</th>
-      <th>zero.13</th>
-      <th>zero.14</th>
-      <th>Pclass</th>
-      <th>zero.15</th>
-      <th>zero.16</th>
-      <th>Embarked</th>
-      <th>zero.17</th>
-      <th>zero.18</th>
-      <th>2urvived</th>
+      <th>track_name</th>
+      <th>artists</th>
+      <th>popularity</th>
+      <th>explicit</th>
+      <th>track_genre</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>count</th>
-      <td>1309.000000</td>
-      <td>1309.000000</td>
-      <td>1309.000000</td>
-      <td>1309.000000</td>
-      <td>1309.000000</td>
-      <td>1309.0</td>
-      <td>1309.0</td>
-      <td>1309.0</td>
-      <td>1309.0</td>
-      <td>1309.0</td>
-      <td>...</td>
-      <td>1309.0</td>
-      <td>1309.0</td>
-      <td>1309.0</td>
-      <td>1309.000000</td>
-      <td>1309.0</td>
-      <td>1309.0</td>
-      <td>1307.000000</td>
-      <td>1309.0</td>
-      <td>1309.0</td>
-      <td>1309.000000</td>
+      <th>81051</th>
+      <td>Unholy (feat. Kim Petras)</td>
+      <td>Sam Smith;Kim Petras</td>
+      <td>100</td>
+      <td>False</td>
+      <td>pop</td>
     </tr>
     <tr>
-      <th>mean</th>
-      <td>655.000000</td>
-      <td>29.503186</td>
-      <td>33.281086</td>
-      <td>0.355997</td>
-      <td>0.498854</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>...</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>2.294882</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>1.492731</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.261268</td>
+      <th>20001</th>
+      <td>Unholy (feat. Kim Petras)</td>
+      <td>Sam Smith;Kim Petras</td>
+      <td>100</td>
+      <td>False</td>
+      <td>dance</td>
     </tr>
     <tr>
-      <th>std</th>
-      <td>378.020061</td>
-      <td>12.905241</td>
-      <td>51.741500</td>
-      <td>0.478997</td>
-      <td>1.041658</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>...</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.837836</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.814626</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.439494</td>
+      <th>51664</th>
+      <td>Quevedo: Bzrp Music Sessions, Vol. 52</td>
+      <td>Bizarrap;Quevedo</td>
+      <td>99</td>
+      <td>False</td>
+      <td>hip-hop</td>
     </tr>
     <tr>
-      <th>min</th>
-      <td>1.000000</td>
-      <td>0.170000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>...</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>1.000000</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.000000</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.000000</td>
+      <th>67356</th>
+      <td>La Bachata</td>
+      <td>Manuel Turizo</td>
+      <td>98</td>
+      <td>False</td>
+      <td>latin</td>
     </tr>
     <tr>
-      <th>25%</th>
-      <td>328.000000</td>
-      <td>22.000000</td>
-      <td>7.895800</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>...</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>2.000000</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>1.000000</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.000000</td>
+      <th>89411</th>
+      <td>La Bachata</td>
+      <td>Manuel Turizo</td>
+      <td>98</td>
+      <td>False</td>
+      <td>reggaeton</td>
     </tr>
     <tr>
-      <th>50%</th>
-      <td>655.000000</td>
-      <td>28.000000</td>
-      <td>14.454200</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>...</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>3.000000</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>2.000000</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.000000</td>
+      <th>68303</th>
+      <td>La Bachata</td>
+      <td>Manuel Turizo</td>
+      <td>98</td>
+      <td>False</td>
+      <td>latino</td>
     </tr>
     <tr>
-      <th>75%</th>
-      <td>982.000000</td>
-      <td>35.000000</td>
-      <td>31.275000</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>...</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>3.000000</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>2.000000</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>1.000000</td>
+      <th>88410</th>
+      <td>La Bachata</td>
+      <td>Manuel Turizo</td>
+      <td>98</td>
+      <td>False</td>
+      <td>reggae</td>
     </tr>
     <tr>
-      <th>max</th>
-      <td>1309.000000</td>
-      <td>80.000000</td>
-      <td>512.329200</td>
-      <td>1.000000</td>
-      <td>8.000000</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>...</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>3.000000</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>2.000000</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>1.000000</td>
+      <th>67359</th>
+      <td>Tití Me Preguntó</td>
+      <td>Bad Bunny</td>
+      <td>97</td>
+      <td>False</td>
+      <td>latin</td>
+    </tr>
+    <tr>
+      <th>68304</th>
+      <td>Tití Me Preguntó</td>
+      <td>Bad Bunny</td>
+      <td>97</td>
+      <td>False</td>
+      <td>latino</td>
+    </tr>
+    <tr>
+      <th>88407</th>
+      <td>Tití Me Preguntó</td>
+      <td>Bad Bunny</td>
+      <td>97</td>
+      <td>False</td>
+      <td>reggae</td>
+    </tr>
+    <tr>
+      <th>89405</th>
+      <td>Tití Me Preguntó</td>
+      <td>Bad Bunny</td>
+      <td>97</td>
+      <td>False</td>
+      <td>reggaeton</td>
+    </tr>
+    <tr>
+      <th>81174</th>
+      <td>I Ain't Worried</td>
+      <td>OneRepublic</td>
+      <td>96</td>
+      <td>False</td>
+      <td>pop</td>
+    </tr>
+    <tr>
+      <th>91003</th>
+      <td>I Ain't Worried</td>
+      <td>OneRepublic</td>
+      <td>96</td>
+      <td>False</td>
+      <td>rock</td>
+    </tr>
+    <tr>
+      <th>79000</th>
+      <td>I Ain't Worried</td>
+      <td>OneRepublic</td>
+      <td>96</td>
+      <td>False</td>
+      <td>piano</td>
+    </tr>
+    <tr>
+      <th>67559</th>
+      <td>Efecto</td>
+      <td>Bad Bunny</td>
+      <td>96</td>
+      <td>False</td>
+      <td>latin</td>
+    </tr>
+    <tr>
+      <th>68359</th>
+      <td>Efecto</td>
+      <td>Bad Bunny</td>
+      <td>96</td>
+      <td>False</td>
+      <td>latino</td>
+    </tr>
+    <tr>
+      <th>81052</th>
+      <td>As It Was</td>
+      <td>Harry Styles</td>
+      <td>95</td>
+      <td>False</td>
+      <td>pop</td>
+    </tr>
+    <tr>
+      <th>68353</th>
+      <td>Ojitos Lindos</td>
+      <td>Bad Bunny;Bomba Estéreo</td>
+      <td>95</td>
+      <td>False</td>
+      <td>latino</td>
+    </tr>
+    <tr>
+      <th>89451</th>
+      <td>Efecto</td>
+      <td>Bad Bunny</td>
+      <td>95</td>
+      <td>False</td>
+      <td>reggaeton</td>
+    </tr>
+    <tr>
+      <th>67500</th>
+      <td>Ojitos Lindos</td>
+      <td>Bad Bunny;Bomba Estéreo</td>
+      <td>95</td>
+      <td>False</td>
+      <td>latin</td>
+    </tr>
+    <tr>
+      <th>88451</th>
+      <td>Efecto</td>
+      <td>Bad Bunny</td>
+      <td>95</td>
+      <td>False</td>
+      <td>reggae</td>
+    </tr>
+    <tr>
+      <th>81102</th>
+      <td>Glimpse of Us</td>
+      <td>Joji</td>
+      <td>94</td>
+      <td>False</td>
+      <td>pop</td>
+    </tr>
+    <tr>
+      <th>88404</th>
+      <td>Ojitos Lindos</td>
+      <td>Bad Bunny;Bomba Estéreo</td>
+      <td>94</td>
+      <td>False</td>
+      <td>reggae</td>
+    </tr>
+    <tr>
+      <th>89403</th>
+      <td>Ojitos Lindos</td>
+      <td>Bad Bunny;Bomba Estéreo</td>
+      <td>94</td>
+      <td>False</td>
+      <td>reggaeton</td>
+    </tr>
+    <tr>
+      <th>67700</th>
+      <td>Neverita</td>
+      <td>Bad Bunny</td>
+      <td>93</td>
+      <td>False</td>
+      <td>latin</td>
     </tr>
   </tbody>
 </table>
-<p>8 rows × 28 columns</p>
 </div>
 </div>
 
@@ -14843,27 +14397,12 @@ memory usage: 286.5 KB
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Obtendrá:</p>
-<ul>
-<li>media</li>
-<li>desviación estándar</li>
-<li>mínimo</li>
-<li>máximo</li>
-<li>percentiles</li>
-</ul>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Validar 2 columnas</strong>
-Ejemplo validando <strong>edad y sexo</strong>:</p>
+<h3 id="Explicaci%C3%B3n-breve">Explicaci&#243;n breve<a class="anchor-link" href="#Explicaci%C3%B3n-breve">&#182;</a></h3><ol>
+<li><strong>Filtro:</strong> <code>explicit == False</code> → elimina canciones explícitas.</li>
+<li><strong>Selección:</strong> solo se muestran las columnas solicitadas.</li>
+<li><strong>Ordenamiento:</strong> <code>sort_values()</code> organiza por <code>popularity</code> de mayor a menor.</li>
+<li><strong>Resultado final:</strong> <code>head(25)</code> devuelve las <strong>25 canciones más populares no explícitas</strong>.</li>
+</ol>
 
 </div>
 </div>
@@ -14873,10 +14412,11 @@ Ejemplo validando <strong>edad y sexo</strong>:</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[[</span><span class="s2">"Age"</span><span class="p">,</span> <span class="s2">"Sex"</span><span class="p">]]</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Filas:"</span><span class="p">,</span> <span class="n">playlist_familiar</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Contiene explicitas:"</span><span class="p">,</span> <span class="n">playlist_familiar</span><span class="p">[</span><span class="s2">"explicit"</span><span class="p">]</span><span class="o">.</span><span class="n">any</span><span class="p">())</span>
 </pre></div>
 
      </div>
@@ -14894,350 +14434,14 @@ Ejemplo validando <strong>edad y sexo</strong>:</p>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>Age    0
-Sex    0
-dtype: int64</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Esto permite ver <strong>valores faltantes</strong>.</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 7. Modificar 2 columnas</span>
-
-<span class="c1">### Ejemplo 1: llenar edades faltantes</span>
-
-<span class="n">df</span><span class="p">[</span><span class="s2">"Age"</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">"Age"</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">"Age"</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### Ejemplo 2: convertir sexo a valores numéricos</span>
-
-<span class="n">df</span><span class="p">[</span><span class="s2">"Sex"</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">"Sex"</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">({</span><span class="s2">"male"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="s2">"female"</span><span class="p">:</span><span class="mi">0</span><span class="p">})</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 8. Ver columnas individuales</span>
-
-<span class="n">df</span><span class="p">[</span><span class="s2">"Age"</span><span class="p">]</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>0       22.0
-1       38.0
-2       26.0
-3       35.0
-4       35.0
-        ... 
-1304    28.0
-1305    39.0
-1306    38.5
-1307    28.0
-1308    28.0
-Name: Age, Length: 1309, dtype: float64</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s2">"Sex"</span><span class="p">]</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>0      NaN
-1      NaN
-2      NaN
-3      NaN
-4      NaN
-        ..
-1304   NaN
-1305   NaN
-1306   NaN
-1307   NaN
-1308   NaN
-Name: Sex, Length: 1309, dtype: float64</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 9. Value Counts de 2 columnas</span>
-
-<span class="c1">### Conteo de sexo</span>
-<span class="n">df</span><span class="p">[</span><span class="s2">"Sex"</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Filas: 25
+Contiene explicitas: False
+</pre>
 </div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>Series([], Name: count, dtype: int64)</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### Conteo de supervivencia</span>
-<span class="n">df</span><span class="p">[</span><span class="s2">"2urvived"</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[21]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>2urvived
-0    967
-1    342
-Name: count, dtype: int64</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 10. Media (mean)</span>
-
-<span class="c1">#Ejemplo con edad:</span>
-
-<span class="n">df</span><span class="p">[</span><span class="s2">"Age"</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[19]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>np.float64(29.50318563789152)</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Ejemplo con tarifa pagada:</span>
-
-<span class="n">df</span><span class="p">[</span><span class="s2">"Fare"</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>np.float64(33.28108563789152)</pre>
-</div>
-
 </div>
 
 </div>
