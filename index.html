@@ -1,18 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Portafolio | Ricardo Vallejo</title>
 
 <link rel="stylesheet" href="config/style.css">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
@@ -20,47 +15,36 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 <canvas id="space"></canvas>
 
 <header>
-
-<nav>
-
+<nav class="navbar">
 <h1 class="logo">
 <i class="fa-solid fa-code"></i> Ricardo Vallejo
 </h1>
 
-<ul>
-<li><a href="#bio"><i class="fa-solid fa-user"></i> Bio</a></li>
-<li><a href="#tareas"><i class="fa-solid fa-book"></i> Tareas</a></li>
-<li><a href="#ejercicios"><i class="fa-solid fa-laptop-code"></i> Ejercicios</a></li>
-<li><a href="#proyecto"><i class="fa-solid fa-rocket"></i> Proyecto</a></li>
-<li><a href="#certificados"><i class="fa-solid fa-certificate"></i> Certificados</a></li>
-<li><a href="#videojuego"><i class="fa-solid fa-gamepad"></i> Videojuego</a></li>
-<li><a href="#redes"><i class="fa-solid fa-share-nodes"></i> Redes</a></li>
+<ul class="menu">
+<li><a href="#bio">Bio</a></li>
+<li><a href="#tareas">Tareas</a></li>
+<li><a href="#ejercicios">Ejercicios</a></li>
+<li><a href="#certificados">Certificados</a></li>
+<li><a href="#videojuego">Videojuego</a></li>
+<li><a href="#redes">Redes</a></li>
 </ul>
-
 </nav>
 
 <section class="hero">
-
 <h2>Portafolio Académico</h2>
 <p>Desarrollo • Cloud • Tecnología</p>
-
 </section>
-
 </header>
 
-<section id="bio">
-
+<section id="bio" class="section">
 <h2><i class="fa-solid fa-user-astronaut"></i> Sobre mí</h2>
-
 <p>
 Soy Ricardo Vallejo, apasionado por el desarrollo de software,
 cloud computing y aprendizaje continuo en tecnología.
 </p>
-
 </section>
 
-<section id="tareas" class="cards">
-
+<section id="tareas" class="section cards">
 <h2><i class="fa-solid fa-book-open"></i> Tareas</h2>
 
 <a href="Ejercicios/tarea_1.html" class="card">
@@ -80,12 +64,10 @@ cloud computing y aprendizaje continuo en tecnología.
 <h3>Tarea 3</h3>
 <p>Actividad realizada durante el curso.</p>
 </a>
-
 </section>
 
-<section id="ejercicios" class="cards">
-
-<h2><i class="fa-solid fa-terminal"></i> Ejercicios de Clase</h2>
+<section id="ejercicios" class="section cards">
+<h2><i class="fa-solid fa-terminal"></i> Ejercicios</h2>
 
 <a href="Ejercicios/ejercicio_2.html" class="card">
 <i class="fa-solid fa-laptop-code icon"></i>
@@ -99,114 +81,167 @@ cloud computing y aprendizaje continuo en tecnología.
 <p>Ejercicio práctico de clase.</p>
 </a>
 
+<!-- Botón Streamlit movido aquí -->
+<a href="Ejercicios/streamlit.html" class="card highlight">
+<i class="fa-solid fa-chart-line icon"></i>
+<h3>Proyecto Streamlit</h3>
+<p>Visualización de datos interactiva.</p>
+</a>
 </section>
 
-<section id="proyecto">
-
+<section id="proyecto" class="section">
 <h2><i class="fa-solid fa-rocket"></i> Proyecto Final</h2>
 
 <div class="project">
-
 <h3>Sistema desarrollado</h3>
-
-<p>
-Descripción del sistema final desarrollado durante el curso.
-</p>
+<p>Descripción del sistema final desarrollado durante el curso.</p>
 
 <a class="btn" href="https://github.com/TodTete">
 <i class="fa-brands fa-github"></i> Repositorio
 </a>
-
 </div>
-<a class="btn" href="Ejercicios/streamlit.html">
-<i class="fa-solid fa-chart-line"></i> Proyecto Streamlit
-</a>
+</section>
 
-<section id="certificados" class="cards">
-
+<section id="certificados" class="section cards">
 <h2><i class="fa-solid fa-certificate"></i> Certificados</h2>
 
 <div class="card">
-    <img src="assets/AWS Well-Architected Foundations.png" style="width:100%;">
-    <h3>AWS Well-Architected Foundations</h3>
+<img src="assets/AWS Well-Architected Foundations.png">
+<h3>AWS Well-Architected Foundations</h3>
 </div>
 
 <div class="card">
-    <img src="assets/Cloud_Partitioner_essencial.png" style="width:100%;">
-    <h3>Cloud Partitioner Essencial</h3>
+<img src="assets/Cloud_Partitioner_essencial.png">
+<h3>Cloud Partitioner Essencial</h3>
 </div>
 
 <div class="card">
-    <img src="assets/Data Engineering on AWS -Foundations.png" style="width:100%;">
-    <h3>Data Engineering on AWS - Foundations</h3>
+<img src="assets/Data Engineering on AWS -Foundations.png">
+<h3>Data Engineering on AWS - Foundations</h3>
 </div>
 
 <div class="card">
-    <img src="assets/Getting into the Serverless.png" style="width:100%;">
-    <h3>Getting into the Serverless</h3>
+<img src="assets/Getting into the Serverless.png">
+<h3>Getting into the Serverless</h3>
 </div>
-
 </section>
 
-<section id="videojuego" class="cards">
-
+<section id="videojuego" class="section cards">
 <h2><i class="fa-solid fa-gamepad"></i> Videojuego</h2>
 
 <div class="card">
-    <img src="assets/juego.png" style="width:100%;">
-    <h3>Proyecto de Videojuego</h3>
-    <p>Vista previa del resultado.</p>
+<img src="assets/juego.png">
+<h3>Proyecto de Videojuego</h3>
+<p>Vista previa del resultado.</p>
 </div>
-
 </section>
 
-<section id="ejercicios-extra" class="cards">
+<section id="extras" class="section">
+<h2><i class="fa-solid fa-flask"></i> Extras</h2>
 
-<h2><i class="fa-solid fa-flask"></i> Ejercicios</h2>
-
-<div style="display:flex; gap:20px; justify-content:center; flex-wrap:wrap;">
-
-<a href="Ejercicios/lambdas.html" class="btn">
-<i class="fa-solid fa-bolt"></i> Lambdas
-</a>
-
-<a href="Ejercicios/netflix.html" class="btn">
-<i class="fa-solid fa-database"></i> PySpark
-</a>
-
-<a href="Ejercicios/mysql.html" class="btn">
-<i class="fa-solid fa-star"></i> Extra
-</a>
-
+<div class="btn-group">
+<a href="Ejercicios/lambdas.html" class="btn">Lambdas</a>
+<a href="Ejercicios/netflix.html" class="btn">PySpark</a>
+<a href="Ejercicios/mysql.html" class="btn">Extra</a>
 </div>
-
 </section>
 
-</section>
-
-
-<section id="redes">
-
+<section id="redes" class="section">
 <h2><i class="fa-solid fa-share-nodes"></i> Redes</h2>
 
 <div class="social">
-
 <a href="https://github.com/TodTete"><i class="fa-brands fa-github"></i></a>
 <a href="https://www.linkedin.com/in/ricardovallejotodtete"><i class="fa-brands fa-linkedin"></i></a>
-
 </div>
-
 </section>
 
 <footer>
-
 <p>© 2026 Ricardo Vallejo</p>
-
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
 <script src="config/script.js"></script>
 
+
+<style>
+/* === MEJORAS VISUALES PARA TAREAS Y EJERCICIOS === */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:linear-gradient(145deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+    border-radius:18px;
+    padding:30px 25px;
+    text-align:center;
+    transition:0.35s ease;
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,0.08);
+    position:relative;
+    overflow:hidden;
+}
+
+.card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:100%;
+    background:linear-gradient(120deg, transparent, rgba(0,217,255,0.3), transparent);
+    transition:0.6s;
+}
+
+.card:hover::before{
+    left:100%;
+}
+
+.card:hover{
+    transform:translateY(-12px) scale(1.04);
+    box-shadow:0 15px 35px rgba(0,217,255,0.25);
+}
+
+.card h3{
+    margin-top:10px;
+    font-size:20px;
+}
+
+.card p{
+    font-size:14px;
+    opacity:0.8;
+    margin-top:8px;
+}
+
+.icon{
+    font-size:34px;
+    margin-bottom:12px;
+    color:#00d9ff;
+}
+
+.card.highlight{
+    border:1px solid #00d9ff;
+    box-shadow:0 0 20px rgba(0,217,255,0.4);
+}
+
+.card.highlight h3{
+    color:#00d9ff;
+}
+
+section h2{
+    margin-bottom:35px;
+    font-size:28px;
+    border-left:4px solid #00d9ff;
+    padding-left:15px;
+}
+
+#tareas, #ejercicios{
+    margin-top:40px;
+}
+
+</style>
+
 </body>
 </html>
-```
